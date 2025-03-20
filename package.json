@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^5.0.1"
+  },
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "this is the revision",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlishMaga/nodejs.git"
+  },
+  "author": "alish-magaju",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlishMaga/nodejs/issues"
+  },
+  "homepage": "https://github.com/AlishMaga/nodejs#readme"
+}
