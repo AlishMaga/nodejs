@@ -1,12 +1,12 @@
 const exprees = require('express');
 const app = exprees();
+const router = require('../route/router.config');
+
 
 app.get('/', (req, res)=>{
     res.end(`This is home page`)
 })
 
-app.get('/about', (req, res)=>{
-    res.end(`This is about page`)
-})
+app.use('/api',router);
 
 module.exports = app;
