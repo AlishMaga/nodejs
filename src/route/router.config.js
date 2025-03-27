@@ -1,11 +1,11 @@
 const router = require('express').Router();
 const routes = require('./routecontroller/authcontroller')
 const validateInput = require('../modules/middlewares')
-
+const {validateRegisterData} = require('../modules/auth.middleware')
 
 
 router.post('/register',validateInput, routes.register)
-router.post('/login', routes.login)
+router.post('/login', validateRegisterData, routes.login)
 
 //params
 router.get('/user/:id', routes.getUserById)
